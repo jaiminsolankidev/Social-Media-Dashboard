@@ -1,0 +1,34 @@
+.appContainer {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-left: var(--sidebar-width-desktop);
+  padding: var(--spacing-xl) var(--spacing-md);
+  min-width: 0;
+  transition: margin-left var(--transition-normal);
+}
+
+/* Tablet Layout */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mainContent {
+    margin-left: var(--sidebar-width-compact);
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+}
+
+/* Mobile Layout */
+@media (max-width: 767px) {
+  .mainContent {
+    margin-left: 0;
+    margin-top: var(--header-height-mobile);
+    margin-bottom: var(--bottom-nav-height);
+    padding: var(--spacing-md) 0;
+    width: 100%;
+  }
+}
