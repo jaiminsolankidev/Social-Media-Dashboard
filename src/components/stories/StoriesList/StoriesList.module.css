@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  margin-bottom: var(--spacing-lg);
+}
+
+.container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+@media (max-width: 767px) {
+  .container {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+}
