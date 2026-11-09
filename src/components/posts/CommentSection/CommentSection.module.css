@@ -1,0 +1,112 @@
+.container {
+  padding: 0 16px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.viewAllButton {
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+}
+
+.viewAllButton:hover {
+  color: var(--text-secondary);
+}
+
+.commentsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  max-height: 220px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.commentItem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  line-height: 1.4;
+}
+
+.commentContent {
+  flex: 1;
+  word-break: break-word;
+}
+
+.commentUser {
+  font-weight: 600;
+  color: var(--text-main);
+  margin-right: 6px;
+  text-decoration: none;
+}
+
+.commentUser:hover {
+  text-decoration: underline;
+}
+
+.commentTime {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-left: 8px;
+}
+
+.deleteButton {
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: var(--radius-sm);
+  opacity: 0.6;
+  transition: opacity var(--transition-fast), color var(--transition-fast);
+}
+
+.deleteButton:hover {
+  opacity: 1;
+  color: var(--color-error);
+}
+
+.inputForm {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid var(--border-light);
+}
+
+.inputField {
+  flex: 1;
+  border: none;
+  background: none;
+  font-size: var(--font-size-sm);
+  color: var(--text-main);
+  padding: 6px 0;
+}
+
+.inputField:focus {
+  outline: none;
+}
+
+.postButton {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--accent-primary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.postButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
