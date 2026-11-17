@@ -10,9 +10,25 @@
       "bio": "Visual storyteller & landscape photographer 📸 | Capturing life one frame at a time.",
       "website": "https://alexmorgan.gallery",
       "location": "London, UK",
-      "followers": ["u2", "u3", "u4", "u5", "u7", "u8"],
-      "following": ["u2", "u3", "u6", "u9"],
-      "savedPosts": ["p3", "p7", "p12"],
+      "followers": [
+        "u2",
+        "u3",
+        "u4",
+        "u5",
+        "u7",
+        "u8"
+      ],
+      "following": [
+        "u2",
+        "u3",
+        "u6",
+        "u9"
+      ],
+      "savedPosts": [
+        "p3",
+        "p7",
+        "p12"
+      ],
       "isPrivate": false,
       "createdAt": "2026-01-10T10:00:00Z"
     },
@@ -26,9 +42,22 @@
       "bio": "Architecture & minimal design enthusiast. Tokyo / San Francisco.",
       "website": "https://mayachen.design",
       "location": "Tokyo, Japan",
-      "followers": ["u1", "u3", "u4", "u6", "u10"],
-      "following": ["u1", "u4", "u5"],
-      "savedPosts": ["p1", "p5"],
+      "followers": [
+        "u1",
+        "u3",
+        "u4",
+        "u6",
+        "u10"
+      ],
+      "following": [
+        "u1",
+        "u4",
+        "u5"
+      ],
+      "savedPosts": [
+        "p1",
+        "p5"
+      ],
       "isPrivate": false,
       "createdAt": "2026-02-14T09:15:00Z"
     },
@@ -42,9 +71,23 @@
       "bio": "Coffee connoisseur, street runner, and indie software dev ☕💻",
       "website": "https://marcusv.dev",
       "location": "Berlin, Germany",
-      "followers": ["u1", "u2", "u5", "u8"],
-      "following": ["u1", "u2", "u7", "u10"],
-      "savedPosts": ["p2", "p6", "p11"],
+      "followers": [
+        "u1",
+        "u2",
+        "u5",
+        "u8"
+      ],
+      "following": [
+        "u1",
+        "u2",
+        "u7",
+        "u10"
+      ],
+      "savedPosts": [
+        "p2",
+        "p6",
+        "p11"
+      ],
       "isPrivate": false,
       "createdAt": "2026-02-20T14:30:00Z"
     },
@@ -58,9 +101,22 @@
       "bio": "Culinary arts, sourdough bread recipes & Mediterranean cuisine 🌿🥖",
       "website": "https://elenacooks.com",
       "location": "Barcelona, Spain",
-      "followers": ["u1", "u2", "u3", "u5", "u6"],
-      "following": ["u1", "u2", "u3"],
-      "savedPosts": ["p4", "p8"],
+      "followers": [
+        "u1",
+        "u2",
+        "u3",
+        "u5",
+        "u6"
+      ],
+      "following": [
+        "u1",
+        "u2",
+        "u3"
+      ],
+      "savedPosts": [
+        "p4",
+        "p8"
+      ],
       "isPrivate": false,
       "createdAt": "2026-03-01T11:00:00Z"
     },
@@ -74,9 +130,21 @@
       "bio": "Urban explorer & vinyl collector. Documenting city nightscapes.",
       "website": "https://davidkim.photo",
       "location": "Seoul, South Korea",
-      "followers": ["u1", "u3", "u7"],
-      "following": ["u1", "u2", "u4", "u8"],
-      "savedPosts": ["p1", "p9"],
+      "followers": [
+        "u1",
+        "u3",
+        "u7"
+      ],
+      "following": [
+        "u1",
+        "u2",
+        "u4",
+        "u8"
+      ],
+      "savedPosts": [
+        "p1",
+        "p9"
+      ],
       "isPrivate": false,
       "createdAt": "2026-03-12T16:45:00Z"
     },
@@ -90,9 +158,22 @@
       "bio": "Fashion designer & vintage textile collector. Paris dreaming 🎨✨",
       "website": "https://atelier-sophie.fr",
       "location": "Paris, France",
-      "followers": ["u1", "u2", "u4", "u9"],
-      "following": ["u1", "u2", "u4", "u7"],
-      "savedPosts": ["p3", "p10"],
+      "followers": [
+        "u1",
+        "u2",
+        "u4",
+        "u9"
+      ],
+      "following": [
+        "u1",
+        "u2",
+        "u4",
+        "u7"
+      ],
+      "savedPosts": [
+        "p3",
+        "p10"
+      ],
       "isPrivate": false,
       "createdAt": "2026-03-25T08:20:00Z"
     },
@@ -106,9 +187,21 @@
       "bio": "Coastal climber, drone pilot & wild camping lover 🏕️🌊",
       "website": "https://liamadventures.ie",
       "location": "Dublin, Ireland",
-      "followers": ["u1", "u3", "u5", "u6"],
-      "following": ["u1", "u3", "u8"],
-      "savedPosts": ["p1", "p14"],
+      "followers": [
+        "u1",
+        "u3",
+        "u5",
+        "u6"
+      ],
+      "following": [
+        "u1",
+        "u3",
+        "u8"
+      ],
+      "savedPosts": [
+        "p1",
+        "p14"
+      ],
       "isPrivate": false,
       "createdAt": "2026-04-02T13:10:00Z"
     },
@@ -122,9 +215,21 @@
       "bio": "Brand identity strategist & ceramic pottery maker. Living slowly 🏺",
       "website": "https://priyastudio.co",
       "location": "Melbourne, Australia",
-      "followers": ["u1", "u3", "u5", "u7"],
-      "following": ["u1", "u2", "u3"],
-      "savedPosts": ["p2", "p15"],
+      "followers": [
+        "u1",
+        "u3",
+        "u5",
+        "u7"
+      ],
+      "following": [
+        "u1",
+        "u2",
+        "u3"
+      ],
+      "savedPosts": [
+        "p2",
+        "p15"
+      ],
       "isPrivate": false,
       "createdAt": "2026-04-18T17:00:00Z"
     },
@@ -138,9 +243,18 @@
       "bio": "Surfer, sound engineer & analog synthesizers fanatic 🏄‍♂️🎛️",
       "website": "https://carloswaves.fm",
       "location": "Lisbon, Portugal",
-      "followers": ["u1", "u6", "u10"],
-      "following": ["u1", "u6"],
-      "savedPosts": ["p7"],
+      "followers": [
+        "u1",
+        "u6",
+        "u10"
+      ],
+      "following": [
+        "u1",
+        "u6"
+      ],
+      "savedPosts": [
+        "p7"
+      ],
       "isPrivate": false,
       "createdAt": "2026-05-01T12:00:00Z"
     },
@@ -154,9 +268,20 @@
       "bio": "Botanical illustrator, greenhouse guardian & plant mom 🌿🌸",
       "website": "https://aminabotanicals.com",
       "location": "Austin, USA",
-      "followers": ["u2", "u3", "u9"],
-      "following": ["u1", "u2", "u4"],
-      "savedPosts": ["p4", "p16"],
+      "followers": [
+        "u2",
+        "u3",
+        "u9"
+      ],
+      "following": [
+        "u1",
+        "u2",
+        "u4"
+      ],
+      "savedPosts": [
+        "p4",
+        "p16"
+      ],
       "isPrivate": false,
       "createdAt": "2026-05-15T09:40:00Z"
     }
@@ -167,9 +292,20 @@
       "userId": "u1",
       "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
       "caption": "Chasing the morning light through alpine valleys. Silence never sounded so grand.",
-      "hashtags": ["mountains", "alps", "wanderlust", "landscape"],
+      "hashtags": [
+        "mountains",
+        "alps",
+        "wanderlust",
+        "landscape"
+      ],
       "location": "Dolomites, Italy",
-      "likes": ["u2", "u3", "u4", "u5", "u7"],
+      "likes": [
+        "u2",
+        "u3",
+        "u4",
+        "u5",
+        "u7"
+      ],
       "createdAt": "2026-11-08T18:00:00Z"
     },
     {
@@ -177,9 +313,19 @@
       "userId": "u2",
       "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
       "caption": "Geometry in glass and concrete. Modern architecture never fails to quiet the mind.",
-      "hashtags": ["architecture", "minimalism", "design", "tokyo"],
+      "hashtags": [
+        "architecture",
+        "minimalism",
+        "design",
+        "tokyo"
+      ],
       "location": "Ginza, Tokyo",
-      "likes": ["u1", "u3", "u5", "u8"],
+      "likes": [
+        "u1",
+        "u3",
+        "u5",
+        "u8"
+      ],
       "createdAt": "2026-11-08T15:20:00Z"
     },
     {
@@ -187,9 +333,19 @@
       "userId": "u3",
       "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80",
       "caption": "First pour of Ethiopian single origin. Crisp acidity, floral notes, ready to code all day.",
-      "hashtags": ["coffee", "barista", "specialtycoffee", "morningroutine"],
+      "hashtags": [
+        "coffee",
+        "barista",
+        "specialtycoffee",
+        "morningroutine"
+      ],
       "location": "Kreuzberg, Berlin",
-      "likes": ["u1", "u2", "u6", "u8"],
+      "likes": [
+        "u1",
+        "u2",
+        "u6",
+        "u8"
+      ],
       "createdAt": "2026-11-08T09:10:00Z"
     },
     {
@@ -197,9 +353,20 @@
       "userId": "u4",
       "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
       "caption": "Freshly pulled from the wood-fired hearth: 78% hydration sourdough with roasted garlic.",
-      "hashtags": ["sourdough", "baking", "foodie", "homemade"],
+      "hashtags": [
+        "sourdough",
+        "baking",
+        "foodie",
+        "homemade"
+      ],
       "location": "Gràcia, Barcelona",
-      "likes": ["u1", "u2", "u3", "u7", "u10"],
+      "likes": [
+        "u1",
+        "u2",
+        "u3",
+        "u7",
+        "u10"
+      ],
       "createdAt": "2026-11-07T20:30:00Z"
     },
     {
@@ -207,9 +374,19 @@
       "userId": "u5",
       "image": "https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1200&q=80",
       "caption": "Neon rain reflections along the alleyways. The city breathes differently after midnight.",
-      "hashtags": ["cyberpunk", "nightphotography", "seoul", "neon"],
+      "hashtags": [
+        "cyberpunk",
+        "nightphotography",
+        "seoul",
+        "neon"
+      ],
       "location": "Hongdae, Seoul",
-      "likes": ["u1", "u2", "u4", "u9"],
+      "likes": [
+        "u1",
+        "u2",
+        "u4",
+        "u9"
+      ],
       "createdAt": "2026-11-07T17:45:00Z"
     },
     {
@@ -217,9 +394,18 @@
       "userId": "u6",
       "image": "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=80",
       "caption": "Autumn silhouettes and drape textures for our upcoming studio collection. Less is more.",
-      "hashtags": ["fashion", "parisfashion", "styling", "minimal"],
+      "hashtags": [
+        "fashion",
+        "parisfashion",
+        "styling",
+        "minimal"
+      ],
       "location": "Le Marais, Paris",
-      "likes": ["u1", "u4", "u8"],
+      "likes": [
+        "u1",
+        "u4",
+        "u8"
+      ],
       "createdAt": "2026-11-07T14:15:00Z"
     },
     {
@@ -227,9 +413,19 @@
       "userId": "u7",
       "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
       "caption": "Where the Atlantic winds sculpt the sea cliffs. Salt spray and clear horizons.",
-      "hashtags": ["coastal", "wildcamping", "nature", "ireland"],
+      "hashtags": [
+        "coastal",
+        "wildcamping",
+        "nature",
+        "ireland"
+      ],
       "location": "Cliffs of Moher, Ireland",
-      "likes": ["u1", "u3", "u5", "u9"],
+      "likes": [
+        "u1",
+        "u3",
+        "u5",
+        "u9"
+      ],
       "createdAt": "2026-11-07T11:00:00Z"
     },
     {
@@ -237,9 +433,19 @@
       "userId": "u8",
       "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=1200&q=80",
       "caption": "Glazing day at the studio. Earthy stoneware bowls finding their tactile harmony.",
-      "hashtags": ["ceramics", "pottery", "handmade", "slowliving"],
+      "hashtags": [
+        "ceramics",
+        "pottery",
+        "handmade",
+        "slowliving"
+      ],
       "location": "Fitzroy, Melbourne",
-      "likes": ["u1", "u2", "u4", "u10"],
+      "likes": [
+        "u1",
+        "u2",
+        "u4",
+        "u10"
+      ],
       "createdAt": "2026-11-06T22:10:00Z"
     },
     {
@@ -247,9 +453,18 @@
       "userId": "u9",
       "image": "https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=1200&q=80",
       "caption": "Clean offshore swell rolled in at dawn. Nothing washes off stress like cold ocean saltwater.",
-      "hashtags": ["surfing", "ocean", "waves", "portugal"],
+      "hashtags": [
+        "surfing",
+        "ocean",
+        "waves",
+        "portugal"
+      ],
       "location": "Ericeira, Portugal",
-      "likes": ["u1", "u3", "u7"],
+      "likes": [
+        "u1",
+        "u3",
+        "u7"
+      ],
       "createdAt": "2026-11-06T18:00:00Z"
     },
     {
@@ -257,9 +472,19 @@
       "userId": "u10",
       "image": "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?auto=format&fit=crop&w=1200&q=80",
       "caption": "My Monstera Deliciosa just unfurled its biggest leaf yet! Nature's perfect fenestration.",
-      "hashtags": ["houseplants", "urbanjungle", "botany", "greenery"],
+      "hashtags": [
+        "houseplants",
+        "urbanjungle",
+        "botany",
+        "greenery"
+      ],
       "location": "Austin Botanics",
-      "likes": ["u1", "u2", "u4", "u8"],
+      "likes": [
+        "u1",
+        "u2",
+        "u4",
+        "u8"
+      ],
       "createdAt": "2026-11-06T14:30:00Z"
     },
     {
@@ -267,9 +492,20 @@
       "userId": "u1",
       "image": "https://images.unsplash.com/photo-1477959858617-67f30bc75b82?auto=format&fit=crop&w=1200&q=80",
       "caption": "London skyline bathed in dusky purple and amber. The view from Waterloo bridge never tires.",
-      "hashtags": ["london", "cityscape", "goldenhour", "travel"],
+      "hashtags": [
+        "london",
+        "cityscape",
+        "goldenhour",
+        "travel"
+      ],
       "location": "Waterloo Bridge, London",
-      "likes": ["u2", "u3", "u5", "u6", "u8"],
+      "likes": [
+        "u2",
+        "u3",
+        "u5",
+        "u6",
+        "u8"
+      ],
       "createdAt": "2026-11-05T20:45:00Z"
     },
     {
@@ -277,9 +513,19 @@
       "userId": "u2",
       "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=80",
       "caption": "Quiet bamboo grove in Arashiyama. When the wind moves, the forest whispers.",
-      "hashtags": ["kyoto", "japan", "serenity", "bamboo"],
+      "hashtags": [
+        "kyoto",
+        "japan",
+        "serenity",
+        "bamboo"
+      ],
       "location": "Arashiyama, Kyoto",
-      "likes": ["u1", "u4", "u7", "u10"],
+      "likes": [
+        "u1",
+        "u4",
+        "u7",
+        "u10"
+      ],
       "createdAt": "2026-11-05T16:00:00Z"
     },
     {
@@ -287,9 +533,18 @@
       "userId": "u3",
       "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80",
       "caption": "Late night code sprint. Dark mode IDE, mechanical keyboard clicks, and pure flow state.",
-      "hashtags": ["developer", "coding", "react", "workspace"],
+      "hashtags": [
+        "developer",
+        "coding",
+        "react",
+        "workspace"
+      ],
       "location": "Berlin Tech Hub",
-      "likes": ["u1", "u2", "u5"],
+      "likes": [
+        "u1",
+        "u2",
+        "u5"
+      ],
       "createdAt": "2026-11-05T11:20:00Z"
     },
     {
@@ -297,9 +552,19 @@
       "userId": "u4",
       "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1200&q=80",
       "caption": "Fresh market haul from La Boqueria! Ripe heirloom tomatoes, basil, and Catalan olive oil.",
-      "hashtags": ["farmersmarket", "organic", "mediterranean", "healthyfood"],
+      "hashtags": [
+        "farmersmarket",
+        "organic",
+        "mediterranean",
+        "healthyfood"
+      ],
       "location": "Mercat de la Boqueria",
-      "likes": ["u1", "u3", "u8", "u10"],
+      "likes": [
+        "u1",
+        "u3",
+        "u8",
+        "u10"
+      ],
       "createdAt": "2026-11-04T19:30:00Z"
     },
     {
@@ -307,9 +572,19 @@
       "userId": "u5",
       "image": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1200&q=80",
       "caption": "Analog vinyl listening session. The warm crackle of jazz on tube amplifiers.",
-      "hashtags": ["vinyl", "records", "audiophile", "music"],
+      "hashtags": [
+        "vinyl",
+        "records",
+        "audiophile",
+        "music"
+      ],
       "location": "Seoul Sounds Studio",
-      "likes": ["u1", "u2", "u6", "u9"],
+      "likes": [
+        "u1",
+        "u2",
+        "u6",
+        "u9"
+      ],
       "createdAt": "2026-11-04T15:10:00Z"
     },
     {
@@ -317,9 +592,18 @@
       "userId": "u6",
       "image": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80",
       "caption": "Draping pure French linen. Every fold tells a story of craftsmanship and patience.",
-      "hashtags": ["atelier", "textiledesign", "hautecouture", "paris"],
+      "hashtags": [
+        "atelier",
+        "textiledesign",
+        "hautecouture",
+        "paris"
+      ],
       "location": "Rue Saint-Honoré, Paris",
-      "likes": ["u1", "u4", "u8"],
+      "likes": [
+        "u1",
+        "u4",
+        "u8"
+      ],
       "createdAt": "2026-11-03T18:40:00Z"
     },
     {
@@ -327,9 +611,18 @@
       "userId": "u7",
       "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
       "caption": "Summit push at 2,400 meters. The steep scramble was worth every burning leg muscle.",
-      "hashtags": ["mountaineering", "hiking", "adventure", "alpine"],
+      "hashtags": [
+        "mountaineering",
+        "hiking",
+        "adventure",
+        "alpine"
+      ],
       "location": "Highlands Ridge",
-      "likes": ["u1", "u3", "u5"],
+      "likes": [
+        "u1",
+        "u3",
+        "u5"
+      ],
       "createdAt": "2026-11-03T12:00:00Z"
     },
     {
@@ -337,9 +630,19 @@
       "userId": "u8",
       "image": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=1200&q=80",
       "caption": "Sun-drenched design nook. Good typography, potted ficus, and afternoon tea.",
-      "hashtags": ["interior", "homedecor", "scandidesign", "zen"],
+      "hashtags": [
+        "interior",
+        "homedecor",
+        "scandidesign",
+        "zen"
+      ],
       "location": "Carlton North",
-      "likes": ["u1", "u2", "u6", "u10"],
+      "likes": [
+        "u1",
+        "u2",
+        "u6",
+        "u10"
+      ],
       "createdAt": "2026-11-02T16:20:00Z"
     },
     {
@@ -347,9 +650,18 @@
       "userId": "u9",
       "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
       "caption": "Patching modular oscillators to craft ambient drone textures for our upcoming EP.",
-      "hashtags": ["modularsynth", "synthesizer", "ambientmusic", "sounddesign"],
+      "hashtags": [
+        "modularsynth",
+        "synthesizer",
+        "ambientmusic",
+        "sounddesign"
+      ],
       "location": "Lisbon Sound Lab",
-      "likes": ["u1", "u3", "u5"],
+      "likes": [
+        "u1",
+        "u3",
+        "u5"
+      ],
       "createdAt": "2026-11-02T10:15:00Z"
     },
     {
@@ -357,9 +669,18 @@
       "userId": "u10",
       "image": "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1200&q=80",
       "caption": "Watering day in the conservatory. Watching new shoots emerge never ceases to enchant.",
-      "hashtags": ["plants", "greenhouse", "succulents", "horticulture"],
+      "hashtags": [
+        "plants",
+        "greenhouse",
+        "succulents",
+        "horticulture"
+      ],
       "location": "Hill Country Greenhouse",
-      "likes": ["u1", "u4", "u8"],
+      "likes": [
+        "u1",
+        "u4",
+        "u8"
+      ],
       "createdAt": "2026-11-01T14:00:00Z"
     }
   ],
@@ -580,7 +901,10 @@
       "id": "s1",
       "userId": "u1",
       "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
-      "viewers": ["u2", "u3"],
+      "viewers": [
+        "u2",
+        "u3"
+      ],
       "createdAt": "2026-11-09T08:00:00Z",
       "expiresAt": "2026-11-10T08:00:00Z"
     },
@@ -588,7 +912,9 @@
       "id": "s2",
       "userId": "u2",
       "image": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=800&q=80",
-      "viewers": ["u1"],
+      "viewers": [
+        "u1"
+      ],
       "createdAt": "2026-11-09T07:30:00Z",
       "expiresAt": "2026-11-10T07:30:00Z"
     },
@@ -604,7 +930,10 @@
       "id": "s4",
       "userId": "u4",
       "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
-      "viewers": ["u1", "u2"],
+      "viewers": [
+        "u1",
+        "u2"
+      ],
       "createdAt": "2026-11-09T06:15:00Z",
       "expiresAt": "2026-11-10T06:15:00Z"
     },
@@ -620,7 +949,9 @@
       "id": "s6",
       "userId": "u6",
       "image": "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=800&q=80",
-      "viewers": ["u1"],
+      "viewers": [
+        "u1"
+      ],
       "createdAt": "2026-11-09T07:00:00Z",
       "expiresAt": "2026-11-10T07:00:00Z"
     },
@@ -636,7 +967,9 @@
       "id": "s8",
       "userId": "u8",
       "image": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80",
-      "viewers": ["u2"],
+      "viewers": [
+        "u2"
+      ],
       "createdAt": "2026-11-09T05:30:00Z",
       "expiresAt": "2026-11-10T05:30:00Z"
     },
@@ -652,7 +985,9 @@
       "id": "s10",
       "userId": "u10",
       "image": "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?auto=format&fit=crop&w=800&q=80",
-      "viewers": ["u1"],
+      "viewers": [
+        "u1"
+      ],
       "createdAt": "2026-11-09T06:50:00Z",
       "expiresAt": "2026-11-10T06:50:00Z"
     }
@@ -664,7 +999,7 @@
       "actorId": "u2",
       "type": "like",
       "postId": "p1",
-      "isRead": false,
+      "isRead": true,
       "createdAt": "2026-11-09T10:15:00Z"
     },
     {
@@ -673,7 +1008,7 @@
       "actorId": "u3",
       "type": "comment",
       "postId": "p1",
-      "isRead": false,
+      "isRead": true,
       "createdAt": "2026-11-09T09:50:00Z"
     },
     {
@@ -682,7 +1017,7 @@
       "actorId": "u7",
       "type": "follow",
       "postId": null,
-      "isRead": false,
+      "isRead": true,
       "createdAt": "2026-11-09T08:30:00Z"
     },
     {
@@ -718,7 +1053,7 @@
       "actorId": "u2",
       "type": "mention",
       "postId": "p2",
-      "isRead": false,
+      "isRead": true,
       "createdAt": "2026-11-08T16:00:00Z"
     },
     {
@@ -797,27 +1132,42 @@
   "conversations": [
     {
       "id": "conv1",
-      "participants": ["u1", "u2"],
+      "participants": [
+        "u1",
+        "u2"
+      ],
       "updatedAt": "2026-11-09T10:15:00Z"
     },
     {
       "id": "conv2",
-      "participants": ["u1", "u3"],
+      "participants": [
+        "u1",
+        "u3"
+      ],
       "updatedAt": "2026-11-08T17:40:00Z"
     },
     {
       "id": "conv3",
-      "participants": ["u1", "u4"],
+      "participants": [
+        "u1",
+        "u4"
+      ],
       "updatedAt": "2026-11-07T21:15:00Z"
     },
     {
       "id": "conv4",
-      "participants": ["u1", "u7"],
+      "participants": [
+        "u1",
+        "u7"
+      ],
       "updatedAt": "2026-11-06T19:30:00Z"
     },
     {
       "id": "conv5",
-      "participants": ["u1", "u8"],
+      "participants": [
+        "u1",
+        "u8"
+      ],
       "updatedAt": "2026-11-05T14:10:00Z"
     }
   ],
@@ -843,7 +1193,7 @@
       "conversationId": "conv1",
       "senderId": "u2",
       "text": "Are you planning to exhibit those prints in Tokyo next spring?",
-      "isRead": false,
+      "isRead": true,
       "createdAt": "2026-11-09T10:15:00Z"
     },
     {
@@ -931,7 +1281,7 @@
       "conversationId": "conv1",
       "senderId": "u2",
       "text": "Keep me posted. We have plenty of studio space here for you.",
-      "isRead": false,
+      "isRead": true,
       "createdAt": "2026-11-09T10:20:00Z"
     },
     {
@@ -971,7 +1321,7 @@
       "conversationId": "conv1",
       "senderId": "u2",
       "text": "Let me know if you need any local photography permits too.",
-      "isRead": false,
+      "isRead": true,
       "createdAt": "2026-11-09T10:22:00Z"
     },
     {
@@ -989,7 +1339,12 @@
       "userId": "u2",
       "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-waves-in-the-water-1164-large.mp4",
       "caption": "Morning waves on the Pacific coastline. Turn sound on for pure serenity 🌊",
-      "likes": ["u1", "u3", "u4", "u5"],
+      "likes": [
+        "u1",
+        "u3",
+        "u4",
+        "u5"
+      ],
       "commentsCount": 14,
       "createdAt": "2026-11-09T10:00:00Z"
     },
@@ -998,7 +1353,11 @@
       "userId": "u3",
       "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-pouring-coffee-into-a-cup-4113-large.mp4",
       "caption": "Slow motion v60 bloom & extraction. The aroma is unbeatable ☕",
-      "likes": ["u1", "u2", "u6"],
+      "likes": [
+        "u1",
+        "u2",
+        "u6"
+      ],
       "commentsCount": 8,
       "createdAt": "2026-11-09T08:30:00Z"
     },
@@ -1007,7 +1366,13 @@
       "userId": "u7",
       "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-waves-crashing-on-the-shoreline-41551-large.mp4",
       "caption": "Emerald waters gliding over Atlantic reefs. Drone perspectives hit different 🚁",
-      "likes": ["u1", "u2", "u3", "u5", "u9"],
+      "likes": [
+        "u1",
+        "u2",
+        "u3",
+        "u5",
+        "u9"
+      ],
       "commentsCount": 21,
       "createdAt": "2026-11-08T19:00:00Z"
     },
@@ -1016,7 +1381,11 @@
       "userId": "u4",
       "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-kneading-bread-dough-on-a-table-41604-large.mp4",
       "caption": "Rhythmic dough folding and shaping. Patience is the secret ingredient 🍞",
-      "likes": ["u1", "u2", "u8"],
+      "likes": [
+        "u1",
+        "u2",
+        "u8"
+      ],
       "commentsCount": 12,
       "createdAt": "2026-11-08T14:10:00Z"
     },
@@ -1025,7 +1394,12 @@
       "userId": "u5",
       "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-traffic-in-a-busy-city-at-night-4277-large.mp4",
       "caption": "Hypnotic long exposure car light trails moving through Seoul 🌃",
-      "likes": ["u1", "u3", "u6", "u7"],
+      "likes": [
+        "u1",
+        "u3",
+        "u6",
+        "u7"
+      ],
       "commentsCount": 17,
       "createdAt": "2026-11-07T22:30:00Z"
     }

@@ -225,6 +225,7 @@ vybe-social-media/
 │   │   │   ├── Avatar/       # Profile images with story ring & initials fallback
 │   │   │   ├── Badge/        # Notification counters and status chips
 │   │   │   ├── Button/       # Button with variants (primary, secondary, danger, ghost)
+│   │   │   ├── Card/         # Reusable Card container (default, elevated, outlined, flat)
 │   │   │   ├── Dropdown/     # Accessible menus with click-outside listener
 │   │   │   ├── EmptyState/   # Empty feed and search states
 │   │   │   ├── Input/        # Inputs with labels, icons, and error handling
@@ -233,13 +234,17 @@ vybe-social-media/
 │   │   │   ├── Modal/        # Accessible dialog with ESC listener and backdrop lock
 │   │   │   ├── ProtectedRoute/# Auth route guards
 │   │   │   └── Toast/        # Global notification toast provider & hook
+│   │   ├── Header/           # Universal Header/Navbar with search & dark mode toggle
+│   │   ├── Notification/     # Reusable Notification item component
+│   │   ├── Post/             # Interactive Post component (likes, comments, share)
+│   │   ├── Profile/          # Reusable Profile bio and stats card
 │   │   ├── layout/           # Persistent layout and responsive navigation
 │   │   │   ├── AppLayout/    # Main shell wrapping outlet
 │   │   │   ├── Header/       # Mobile top bar
 │   │   │   ├── MobileNavigation/ # Mobile bottom 5-button bar
 │   │   │   ├── RightSidebar/ # Desktop suggestions & trending topics
 │   │   │   └── Sidebar/      # Desktop & tablet navigation sidebar
-│   │   ├── posts/            # Post feed architecture
+│   │   ├── posts/            # Feed architecture components
 │   │   │   ├── CommentSection/# Comment list, input, and delete handlers
 │   │   │   ├── PostActions/  # Like, Comment, Share, Save buttons
 │   │   │   ├── PostCaption/  # Formatted likes, caption text, and hashtags
@@ -277,6 +282,7 @@ vybe-social-media/
 │   │   ├── NotFound/
 │   │   ├── Notifications/
 │   │   ├── Profile/
+│   │   ├── ProfilePage/      # Profile page view
 │   │   ├── Register/
 │   │   ├── Reels/
 │   │   ├── Saved/
@@ -297,12 +303,23 @@ vybe-social-media/
 │   ├── test/                 # Test setup and utilities
 │   │   ├── setup.js
 │   │   └── testUtils.jsx
+│   ├── utils/                # Utility helpers & API wrappers
+│   │   ├── api.js            # Universal API methods & client re-export
+│   │   ├── constants.js
+│   │   ├── formatDate.js
+│   │   ├── helpers.js
+│   │   ├── storage.js
+│   │   └── validators.js
+│   ├── App.js
 │   ├── App.jsx
+│   ├── index.js
 │   └── main.jsx
-├── practice-labs/            # Independent Month 2 Practice Apps
+├── tests/                    # Top-level integration & dashboard test suite
+│   └── dashboard.test.jsx
+├── practice-labs/            # Step-by-step curriculum labs (Weeks 1 & 2)
 │   ├── counter-app/          # Lab 1: useState & event handling
 │   ├── api-dashboard/        # Lab 2: useEffect & remote data fetching
-│   └── mini-social-feed/     # Lab 3: Component communication & props
+│   └── mini-social-feed/     # Lab 3: State flow & comment system
 ├── .env.example
 ├── .eslintrc.cjs
 ├── .gitignore
@@ -444,6 +461,34 @@ npm test
   ✓ handles disabled state properly
   ✓ handles loading state with spinner and disables button
 
+✓ src/components/common/Card/Card.test.jsx (4 tests)
+  ✓ renders children content correctly
+  ✓ renders title and subtitle when provided
+  ✓ renders header action and footer
+  ✓ handles click events when onClick is provided
+
+✓ src/components/Post/Post.test.jsx (3 tests)
+  ✓ renders author info, time, content and image
+  ✓ toggles likes count when like button is clicked
+  ✓ toggles comments and allows submitting a new comment
+
+✓ src/components/Profile/Profile.test.jsx (3 tests)
+  ✓ renders user details, bio, and statistics
+  ✓ toggles follow state and updates follower count
+  ✓ renders edit profile button for current user
+
+✓ src/components/Notification/Notification.test.jsx (2 tests)
+  ✓ renders actor name, notification message, and timestamp
+  ✓ marks notification as read on click
+
+✓ tests/dashboard.test.jsx (10 tests)
+  ✓ Reusable Button: renders and disables properly
+  ✓ Reusable Card: renders title, subtitle, and body
+  ✓ Reusable Modal: opens, closes on ESC, hides when closed
+  ✓ Post Component: renders details, increments/decrements likes, adds comments
+  ✓ Profile Component: renders stats and user information
+  ✓ Notification Component: handles read toggle
+
 ✓ src/components/posts/PostCard/PostCard.test.jsx (5 tests)
   ✓ displays author information and location
   ✓ displays caption and hashtags
@@ -483,9 +528,9 @@ npm test
   ✓ renders Explore page on /explore route
   ✓ renders Not Found page on an invalid route
 
-Test Files:  9 passed (9)
-Tests:       27 passed (27)
-Duration:    ~11s
+Test Files:  14 passed (14)
+Tests:       49 passed (49)
+Duration:    ~14s
 ```
 
 ---
