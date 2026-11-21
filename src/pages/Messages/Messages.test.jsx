@@ -8,7 +8,7 @@ describe('Messages Page', () => {
   it('displays conversation list and search bar', async () => {
     renderWithProviders(<Messages />);
     expect(
-      screen.getByPlaceholderText(/search conversations/i)
+      await screen.findByPlaceholderText(/search conversations/i)
     ).toBeInTheDocument();
   });
 
@@ -16,7 +16,7 @@ describe('Messages Page', () => {
     const user = userEvent.setup();
     renderWithProviders(<Messages />);
 
-    const messageInput = await screen.findByPlaceholderText(/message\.\.\./i);
+    const messageInput = await screen.findByPlaceholderText(/write a message/i);
     expect(messageInput).toBeInTheDocument();
 
     await user.type(messageInput, 'Hello there!');

@@ -1,147 +1,127 @@
 .container {
-  width: 100%;
-  max-width: 600px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 24px 20px;
   display: flex;
   flex-direction: column;
-  background-color: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
+  gap: 16px;
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 20px;
-  border-bottom: 1px solid var(--border-color);
+  gap: 16px;
+}
+
+.titleArea {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bellIcon {
+  color: #a855f7;
 }
 
 .title {
-  font-size: var(--font-size-xl);
+  font-size: 1.35rem;
   font-weight: 700;
-  color: var(--text-main);
+  color: var(--text-primary);
+  margin: 0;
 }
 
-.markAllBtn {
-  font-size: var(--font-size-xs);
-  font-weight: 600;
-  color: var(--accent-primary);
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 4px 8px;
-  border-radius: var(--radius-sm);
+.unreadBadge {
+  background-color: rgba(168, 85, 247, 0.15);
+  color: #a855f7;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 9999px;
 }
 
-.markAllBtn:hover {
-  background-color: var(--accent-light);
-}
-
-.filtersRow {
+.tabs {
   display: flex;
+  gap: 8px;
   border-bottom: 1px solid var(--border-color);
-  background-color: var(--bg-secondary);
+  padding-bottom: 8px;
 }
 
-.filterTab {
-  flex: 1;
-  padding: 10px 0;
-  text-align: center;
-  font-size: var(--font-size-sm);
-  font-weight: 600;
-  color: var(--text-secondary);
+.tab {
   background: none;
   border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
   cursor: pointer;
-  border-bottom: 2px solid transparent;
-  transition: all var(--transition-fast);
+  transition: all 0.2s ease;
 }
 
-.filterTab:hover {
-  color: var(--text-main);
+.tab:hover {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
 }
 
 .activeTab {
-  color: var(--accent-primary);
-  border-bottom-color: var(--accent-primary);
-  background-color: var(--bg-card);
+  background-color: rgba(168, 85, 247, 0.12);
+  color: #a855f7;
+  font-weight: 600;
 }
 
 .list {
   display: flex;
   flex-direction: column;
+  gap: 8px;
 }
 
-.item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--spacing-md);
-  padding: 14px 20px;
-  border-bottom: 1px solid var(--border-light);
-  text-decoration: none;
-  color: inherit;
-  transition: background-color var(--transition-fast);
-}
-
-.item:hover {
-  background-color: var(--bg-hover);
-}
-
-.unreadItem {
-  background-color: var(--accent-light);
-}
-
-.meta {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-md);
-  flex: 1;
-  min-width: 0;
-}
-
-.textContainer {
+.loaderArea {
   display: flex;
   flex-direction: column;
-  font-size: var(--font-size-sm);
-  line-height: 1.4;
-}
-
-.actorName {
-  font-weight: 700;
-  color: var(--text-main);
-}
-
-.actionText {
-  color: var(--text-secondary);
-}
-
-.time {
-  font-size: 11px;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  gap: 12px;
   color: var(--text-muted);
 }
 
-.postThumbnail {
-  width: 44px;
-  height: 44px;
-  border-radius: var(--radius-sm);
-  object-fit: cover;
-  flex-shrink: 0;
-}
-
-.unreadDot {
-  width: 8px;
-  height: 8px;
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid rgba(168, 85, 247, 0.2);
+  border-top-color: #a855f7;
   border-radius: 50%;
-  background-color: var(--accent-primary);
-  flex-shrink: 0;
+  animation: spin 0.8s linear infinite;
 }
 
-@media (max-width: 767px) {
-  .container {
-    border-radius: 0;
-    border-left: none;
-    border-right: none;
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
+}
+
+.emptyState {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 48px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.emptyTitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.emptyDesc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0;
 }

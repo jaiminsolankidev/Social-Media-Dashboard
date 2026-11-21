@@ -1,24 +1,21 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Home, User, Bell, MessageCircle, Moon, Sun, Search } from 'lucide-react';
-import { useTheme } from '../../context/ThemeContext';
-import { useNotifications } from '../../hooks/useNotifications';
 import styles from './Header.module.css';
 
 /**
- * Reusable Header/Navbar component for the Social Media Dashboard.
- * Includes logo, quick navigation links, search input, dark mode toggle, and notification badge.
+ * Reusable Header / Navbar component for the Social Media Dashboard.
+ * Includes branding, global search, routing navigation, unread badge, and light/dark theme toggle.
  */
-export default function Header({ onSearch }) {
+export default function Header({ unreadCount = 0, onSearch, theme = 'dark', onToggleTheme }) {
   const [searchTerm, setSearchTerm] = useState('');
   const location = useLocation();
-  const { theme, toggleTheme } = useTheme?.() || { theme: 'light', toggleTheme: () => {} };
-  const { unreadCount } = useNotifications?.() || { unreadCount: 0 };
 
-  const handleSearchSubmit = (e) => {
-    e.preventDefault();
+  const handleSearchChange = (e) => {
+    const val = e.target.value;
+    setSearchTerm(val);
     if (onSearch) {
-      onSearch(searchTerm);
+      onSearch(val);
     }
   };
 
@@ -31,29 +28,26 @@ export default function Header({ onSearch }) {
   return (
     <header className={styles.navbar} aria-label="Main Navigation">
       <div className={styles.container}>
-        {/* Logo / Brand */}
+        {/* Brand / Logo */}
         <Link to="/" className={styles.brand}>
           <span className={styles.brandIcon}>✨</span>
-          <span className={styles.brandTitle}>VYBE</span>
+          <span className={styles.brandTitle}>Social Media Dashboard</span>
         </Link>
 
         {/* Global Search Bar */}
-        <form onSubmit={handleSearchSubmit} className={styles.searchForm}>
+        <div className={styles.searchContainer}>
           <Search size={16} className={styles.searchIcon} />
           <input
             type="text"
-            placeholder="Search creators, hashtags..."
+            placeholder="Search posts or creators..."
             value={searchTerm}
-            onChange={(e) => {
-              setSearchTerm(e.target.value);
-              if (onSearch) onSearch(e.target.value);
-            }}
+            onChange={handleSearchChange}
             className={styles.searchInput}
             aria-label="Search"
           />
-        </form>
+        </div>
 
-        {/* Navigation Links & Actions */}
+        {/* Navigation Items */}
         <nav className={styles.navLinks}>
           <Link
             to="/"
@@ -94,15 +88,18 @@ export default function Header({ onSearch }) {
             <span className={styles.navLabel}>Profile</span>
           </Link>
 
-          {/* Theme toggle button */}
-          <button
-            type="button"
-            onClick={toggleTheme}
-            className={styles.themeToggle}
-            aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
-          >
-            {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
-          </button>
+          {/* Theme toggle switch */}
+          {onToggleTheme && (
+            <button
+              type="button"
+              onClick={onToggleTheme}
+              className={styles.themeToggle}
+              title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+              aria-label="Toggle theme"
+            >
+              {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
+            </button>
+          )}
         </nav>
       </div>
     </header>

@@ -1,81 +1,76 @@
-import { lazy, Suspense } from 'react';
-import { Routes, Route } from 'react-router-dom';
-import AppLayout from './components/layout/AppLayout/AppLayout';
-import ProtectedRoute, { PublicOnlyRoute } from './components/common/ProtectedRoute/ProtectedRoute';
-import Loader from './components/common/Loader/Loader';
+import { useState, useEffect } from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import Header from './components/Header/Header';
+import Home from './pages/Home/Home';
+import ProfilePage from './pages/ProfilePage/ProfilePage';
+import Notifications from './pages/Notifications/Notifications';
+import Messages from './pages/Messages/Messages';
+import useLocalStorage from './hooks/useLocalStorage';
+import { getNotifications } from './utils/api';
 
-// Code-split pages for performance optimization
-const Home = lazy(() => import('./pages/Home/Home'));
-const Explore = lazy(() => import('./pages/Explore/Explore'));
-const Reels = lazy(() => import('./pages/Reels/Reels'));
-const Messages = lazy(() => import('./pages/Messages/Messages'));
-const Notifications = lazy(() => import('./pages/Notifications/Notifications'));
-const Profile = lazy(() => import('./pages/Profile/Profile'));
-const Settings = lazy(() => import('./pages/Settings/Settings'));
-const Saved = lazy(() => import('./pages/Saved/Saved'));
-const Login = lazy(() => import('./pages/Login/Login'));
-const Register = lazy(() => import('./pages/Register/Register'));
-const NotFound = lazy(() => import('./pages/NotFound/NotFound'));
-
+/**
+ * Social Media Dashboard - Main Application Component.
+ * Integrates:
+ * - Routing between views (Home, Profile, Notifications, Messages)
+ * - Light / Dark mode toggle with local storage persistence
+ * - Global search synchronization
+ * - Notification alerts count
+ */
 export default function App() {
-  return (
-    <Suspense
-      fallback={
-        <div
-          style={{
-            minHeight: '100vh',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        >
-          <Loader size="lg" text="Loading VYBE..." />
-        </div>
+  const [theme, setTheme] = useLocalStorage('smd_theme', 'dark');
+  const [searchTerm, setSearchTerm] = useState('');
+  const [unreadCount, setUnreadCount] = useState(0);
+
+  // Apply theme to document
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
+
+  // Fetch initial unread notifications count
+  useEffect(() => {
+    let isMounted = true;
+    async function checkNotifications() {
+      try {
+        const notifs = await getNotifications();
+        if (isMounted) {
+          const unread = notifs.filter((n) => !n.isRead).length;
+          setUnreadCount(unread);
+        }
+      } catch {
+        // Fallback silently
       }
-    >
-      <Routes>
-        {/* Public-only authentication routes */}
-        <Route
-          path="/login"
-          element={
-            <PublicOnlyRoute>
-              <Login />
-            </PublicOnlyRoute>
-          }
-        />
-        <Route
-          path="/register"
-          element={
-            <PublicOnlyRoute>
-              <Register />
-            </PublicOnlyRoute>
-          }
-        />
+    }
+    checkNotifications();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
-        {/* Authenticated Application routes inside persistent AppLayout */}
-        <Route
-          path="/"
-          element={
-            <ProtectedRoute>
-              <AppLayout />
-            </ProtectedRoute>
-          }
-        >
-          <Route index element={<Home />} />
-          <Route path="explore" element={<Explore />} />
-          <Route path="reels" element={<Reels />} />
-          <Route path="messages" element={<Messages />} />
-          <Route path="notifications" element={<Notifications />} />
-          <Route path="create" element={<Home />} />
-          <Route path="profile" element={<Profile />} />
-          <Route path="profile/:username" element={<Profile />} />
-          <Route path="saved" element={<Saved />} />
-          <Route path="settings" element={<Settings />} />
-        </Route>
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
+  };
 
-        {/* 404 Catch-All Route */}
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </Suspense>
+  return (
+    <div className="app-layout" data-theme={theme}>
+      {/* Top Navigation Bar */}
+      <Header
+        unreadCount={unreadCount}
+        onSearch={setSearchTerm}
+        theme={theme}
+        onToggleTheme={toggleTheme}
+      />
+
+      {/* Main Content Area */}
+      <main className="main-content">
+        <Routes>
+          <Route path="/" element={<Home searchTerm={searchTerm} />} />
+          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/profile/:username" element={<ProfilePage />} />
+          <Route path="/notifications" element={<Notifications />} />
+          <Route path="/messages" element={<Messages />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </main>
+    </div>
   );
 }
